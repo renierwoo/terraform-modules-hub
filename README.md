@@ -1,7 +1,7 @@
 # Terraform Modules Hub
 Multi-Cloud Terraform Module Hub: Simplifying infrastructure deployment across multiple cloud providers.
 
-<p align="left">
+<p align="center">
   <img src="./terraform-agnostic.png" alt="Terraform Modules Hub">
 </p>
 
