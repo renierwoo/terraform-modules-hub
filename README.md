@@ -7,7 +7,7 @@ Multi-Cloud Terraform Module Hub: Simplifying infrastructure deployment across m
 
 <script>
   // Check user's color preference.
-  const prefersDarkMode = windows.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   // Select the logo element.
   const logoElement = document.getElementById('logo');
