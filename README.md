@@ -9,24 +9,13 @@ Multi-Cloud Terraform Module Hub: Simplifying infrastructure deployment across m
 
 ```hcl
 module "eks" {
-  source = "terraform-modules-hub/AWS/modules/eks"
+  source  = "git@github.com:renierwoo/terraform-modules-hub.git//aws/eks"
+  version = "1.0.0"
 
-  cluster_name    = "My-Cluster"
+  cluster_name    = "my-cluster"
   cluster_version = "1.27"
 
   cluster_endpoint_public_access = true
-
-  cluster_addons = {
-    coredns = {
-      most_recent = true
-    }
-    kube-proxy = {
-      most_recent = true
-    }
-    vpc-cni = {
-      most_recent = true
-    }
-  }
 
   vpc_id                   = "vpc-1234556abcdef"
   subnet_ids               = ["subnet-abcde012", "subnet-bcde012a", "subnet-fghi345a"]
@@ -77,6 +66,18 @@ module "eks" {
     "777777777777",
     "888888888888",
   ]
+
+  cluster_addons = {
+    coredns = {
+      most_recent = true
+    }
+    kube-proxy = {
+      most_recent = true
+    }
+    vpc-cni = {
+      most_recent = true
+    }
+  }
 
   tags = {
     Environment = "dev"
