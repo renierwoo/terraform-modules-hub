@@ -5,17 +5,6 @@ Multi-Cloud Terraform Module Hub: Simplifying infrastructure deployment across m
   <img src="./logo-light.png" alt="Terraform Modules Hub" id="logo" />
 </p>
 
-<script>
-  // Check user's color preference.
-  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  // Select the logo element.
-  const logoElement = document.getElementById('logo');
-
-  // Set the source of the logo based on the color preference.
-  logoElement.src = prefersDarkMode ? 'logo-dark.jpg' : 'logo-light.png';
-</script>
-
 ## Usage
 
 ```hcl
